@@ -1,0 +1,57 @@
+/* google fonts imported! */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+@import "tailwindcss";
+
+
+:root {
+  --primary: #ffd700; /* Golden Yellow */
+  --primary-dark: #e6c200; /* Darker Yellow */
+  --secondary: #4a6572; /* Blue-Gray as complementary color */
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --background: #fff9c4; /* Light Yellow Background */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--text-light);
+  color: var(--secondary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid var(--secondary);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary);
+  color: var(--text-light);
+}
